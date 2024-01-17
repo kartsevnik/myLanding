@@ -1,6 +1,10 @@
 @import "fonts.css";
 @import "null.css";
 
+ul {
+    margin-bottom: 0;
+}
+
 body {
     background-color: black;
     color: #8491A0;
@@ -392,9 +396,9 @@ body {
     justify-content: center;
     gap: 25px;
     color: #FFF;
-    background-color: rgb(4, 8, 30);
+    background-color: #181823;
 
-    background: #2A2A2A;
+
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
     border-radius: 29px;
     transition: all 0.3s ease 0s;
@@ -423,4 +427,94 @@ body {
     font-size: 16px;
 }
 
+/* ============================ */
+
+.main__contacts {}
+
+.block-contacts {
+    background-color: #181823;
+
+}
+
+.block-contacts__container {
+    padding: 120px 70px 120px 180px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.block-contacts__title {
+    width: 50%;
+}
+
+
+.text-block__title {}
+
+.text-block__sub-title {}
+
+.block-contacts__button {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.block-contacts__button button {
+    text-align: center;
+}
+
+
+
+/* ============================ */
+
 .footer {}
+
+.footer__container {
+    padding: 80px 180px 80px 180px;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top {}
+
+.footer-top__left {
+    max-width: 50%;
+}
+
+.logo-name {}
+
+.links {
+    display: flex;
+    padding: 15px 0;
+}
+
+.links__link {
+    width: 50%;
+}
+
+.links__link_image {
+    width: 24px;
+}
+
+.footer-top__right {
+    max-width: 50%;
+
+}
+
+.footer-menu {}
+
+.footer-menu__item {
+    padding: 5px 0;
+
+}
+
+.footer-menu__item a:hover {
+    color: #5221E6;
+    transition: all 0.5s ease 0s;
+}
+
+.footer__bottom {}
