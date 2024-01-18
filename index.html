@@ -4,27 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume of Kartsev M.</title>
+    <title>Personal page: Kartsev M.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/ico/man2.png">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <div class="header_menu menu">
+                <!-- <div class="header_menu menu">
                     <div class="menu__logo-name logo-name">Kartsev M.</div>
                     <ul class="menu__list list-menu">
-                        <li class="list-menu__item"><a href="#education">Education</a></li>
-                        <li class="list-menu__item"><a href="#experience">Work Experience</a></li>
-                        <li class="list-menu__item"><a href="#technologies">Technologies</a></li>
-                        <li class="list-menu__item"><a href="#projects">My projects</a></li>
-                        <li class="list-menu__item"><a href="#testimonials">About me</a></li>
-                        <li class="list-menu__item"><a href="#">Contact me</a></li>
+                        <a href="#education">
+                            <li class="list-menu__item">Education</li>
+                        </a>
+                        <a href="#experience">
+                            <li class="list-menu__item">Work Experience</li>
+                        </a>
+                        <a href="#technologies">
+                            <li class="list-menu__item">Technologies</li>
+                        </a>
+                        <a href="#projects">
+                            <li class="list-menu__item">My projects</li>
+                        </a>
+                        <a href="#testimonials">
+                            <li class="list-menu__item">About me</li>
+                        </a>
+                        <a href="#contacts">
+                            <li class="list-menu__item">Contact me</li>
+                        </a>
                     </ul>
-                </div>
+                </div> -->
+
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <div class="menu__logo-name logo-name">Kartsev M.</div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 30 30">
+                                    <path stroke="rgba(132, 145, 160, 0.75)" stroke-linecap="round"
+                                        stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" />
+                                </svg></span>
+
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <a class="nav-link" href="#education">
+                                    <li class="nav-item list-menu__item">Education</li>
+                                </a>
+                                <a class="nav-link" href="#experience">
+                                    <li class="nav-item list-menu__item">Work Experience</li>
+                                </a>
+                                <a class="nav-link" href="#technologies">
+                                    <li class="nav-item list-menu__item">Technologies</li>
+                                </a>
+                                <a class="nav-link" href="#projects">
+                                    <li class="nav-item list-menu__item">My projects</li>
+                                </a>
+                                <a class="nav-link" href="#testimonials">
+                                    <li class="nav-item list-menu__item">About me</li>
+                                </a>
+                                <a class="nav-link" href="#contacts">
+                                    <li class="nav-item list-menu__item">Contact me</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
 
@@ -108,7 +162,7 @@
                             world,
                             and a sense of belonging to something greater than themselves. I pursue these goals by
                             adhering
-                            to my values: perseverance, creativity, and precision.</div>
+                            to my values: perseverance, creativity and precision.</div>
                     </div>
 
                     <img class="block-philosofia__image" src="img/philosofia.jpg" alt="philosofia">
@@ -117,9 +171,10 @@
             </div>
 
             <div class="main__experience block-experience">
-                <div class="block-experience__container">
-                    <div class="block-experience__left-side" id="experience">
-                        <div class="block-experience__title text-block">
+                <div class="block-experience__container" id="experience">
+                    <div class="block-experience__left-side" id="left-Block">
+
+                        <div class="block-experience__title text-block" id="blockToMove">
                             <div class="text-block__sub-title">My work experience</div>
                             <div class="text-block__title">Work that I’ve done for the past 13 years</div>
                         </div>
@@ -180,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block-experience__right-side">
+                    <div class="block-experience__right-side" id="right-Block">
                         <div class="cards-experience">
                             <div class="card-experience">
                                 <div class="card-experience__image"><img src="img/dEPArtment state.jpg"
@@ -226,7 +281,7 @@
                             </div>
 
                         </div>
-                        <div class="block-experience__button"><a target="_blank"
+                        <div class="block-experience__button" id="experience-button"><a target="_blank"
                                 href="https://kartsevnik.github.io/fls_js/index.html" class="button">All my projects</a>
                         </div>
                     </div>
@@ -373,7 +428,7 @@
             </div>
 
             <!-- Раздел "Свяжитесь со мной", содержащий информацию, необходимую пользователям для связи с вами. -->
-            <div class="main__contacts block-contacts">
+            <div class="main__contacts block-contacts" id="contacts">
                 <div class="block-contacts__container">
                     <div class="block-contacts__title text-block">
                         <div class="text-block__title">Let’s get started</div>
@@ -395,7 +450,8 @@
                         <div class="links">
                             <div class="links__link"><a href="https://www.facebook.com/NKartsev/"><img
                                         class="links__link_image" src="img/ico-links/icons8-fb-48.png"
-                                        alt="facebook"></a></div>
+                                        alt="facebook"></a>
+                            </div>
                             <div class="links__link"><a href="https://www.linkedin.com/in/mykola-kartsev-317073b2/"><img
                                         class="links__link_image" src="img/ico-links/icons8-linkedin-48.png"
                                         alt="linkedin"></a></div>
@@ -420,6 +476,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
