@@ -37,7 +37,7 @@ class ChangeBlock {
     }
 
     moveBlockReturn() {
-        console.log(this.positionReturn);
+        // console.log(this.positionReturn);
         // Перемещаем блок внутрь другого блока
         if (this.positionReturn == "append") {
             this.returnBlock.append(this.blockToMove);
@@ -91,8 +91,8 @@ function greatings() {
             element.innerHTML = "Good Night!";
     }
 }
-
-window.onload = function () {
-    greatings()
-}
+greatings()
+// window.onload = function () {
+  
+// }
 
