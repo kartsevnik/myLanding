@@ -1301,3 +1301,53 @@ body {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
+
+.block-experience__button {
+  color: #ffffff;
+}
+
+.link-btn {
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #8491A0;
+}
+
+.block-experience__button .link-btn {
+  line-height: 40px;
+  border: 2px solid #333;
+  padding: 18px 48px;
+}
+
+.link-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.link-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #5221E6;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #ffffff;
+}
+
+.link-btn:hover {
+  color: #fff;
+}
+
+.link-btn:hover:after {
+  height: 100%;
+  color: #ffffff;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}

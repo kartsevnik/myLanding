@@ -95,3 +95,4 @@ function greatings() {
 window.onload = function () {
     greatings()
 }
+
